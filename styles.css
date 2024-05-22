@@ -165,6 +165,67 @@
 }
 
 /* Busqueda de empleo*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.search-bar-container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search-form input[type="text"],
+.search-form select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 300px;
+  /* Ajusta el ancho aquí */
+}
+
+.search-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #45a049;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  /* Ajusta el margen derecho para controlar la separación */
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
