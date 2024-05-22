@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0px 30px;
+}
+
+/*Navbar*/
+.navbar {
+  position: fixed;
+  background: #1c0e49;
+  z-index: 5;
+  /* Para que esté por encima de los demás elementos */
+  width: 100%;
+  padding: 10px 0;
+  height: 95px;
+}
+
+.navbar .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar .menu-list {
+
+  display: flex;
+  padding: 0;
+}
+
+.navbar .logo {
+  width: auto;
+  height: auto;
+}
+
+.navbar .logo img {
+  height: 50px;
+  width: 224px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 20px;
+  /*separacion entre elementos*/
+}
+
+.menu-list li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.menu-list li a {
+  color: #ffffff;
+  font-size: 21px;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+/*Carousel*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  color: #dd601f
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  transform: translateX(-35%);
+  color: #1c0e49;
+  font-family: 'Kanit', sans-serif;
+}
+
+.carousel-caption h5 {
+  color: #1c0e49;
+  font-size: 47px;
+  font-family: 'Konit', sans-serif;
+}
+
+.carousel-caption p {
+  color: #1c0e49;
+  font-size: 21px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+  background-color: orange;
+  /* Cambia el color de fondo a naranja */
+  border-color: orange;
+  /* Cambia el color del borde a naranja */
+}
+
+/* .carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: '‹';
+  font-size: 2em;  
+} 
+
+ .carousel-control-next-icon::before {
+  content: '›';
+}  */
+
+/*Card*/
+
+.card {
+  max-width: 290px;
+  max-height: 236px;
+  margin: 0 auto;
+}
+
+.dark-background {
+  background-color: #1c0e49;
+  height: 425px;
+  width: auto;
+  padding: 94.5px;
+}
+
+.card-title {
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+.card.custom-card-bg {
+  background-color: #FFFFFF15;
+  color: #ffffff;
+}
+
+.another-background {
+  background-color: #4f4ac0;
+  height: 474px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  font-family: 'Kanit', sans-serif;
+  color: #ffffff;
+}
+
+.content {
+  padding: center;
+}
+
+@media (max-width: 768px) {
+  .navbar .menu-list {
+    display: none;
+  }
+}
+
+/* Busqueda de empleo*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.job-posting {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.department {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.job-posting {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.job-title,
+.location {
+  font-size: 20px;
+  color: #333;
+}
+
+.department {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button-apply {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-info {
+  background-color: black;
+  color: white;
+}
+
+/* Posiciones */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.job-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.job-posting {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 48%;
+}
+
+.job-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.department {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.button-apply {
+  background-color: #4f4ac0;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.button-info {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.button-apply:hover {
+  background-color: #45a049;
+}
+
+.location-icon {
+  font-size: 18px;
+  color: #ccc;
+  margin-right: 5px;
+}
+
+.button {
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  /* Alinea los elementos a la derecha */
+}
+
+/* Estilos para el formulario */
+
+.body {
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-apply {
+  background-color: #1976D2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/*Footer*/
+.footer {
+  background-color: #1c0e49;
+  color: #ffffff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.container-fluid {
+  background-color: #1c0e49;
+  height: 92px;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 5%;
+}
+
+.copyright-container {
+  color: #ffffff;
+  font-size: 12.8px;
+  text-align: center;
+}
