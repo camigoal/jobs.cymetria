@@ -1,10 +1,23 @@
-// function showForm() {
-//     document.getElementById('apply-form').style.display = 'block';
-//   }
-
 // Bootstrap JS 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+document.querySelector('.search-form').addEventListener('submit', function (event) {
+    console.log('Formulario enviado');
+    event.preventDefault();
 
+    var jobTitle = document.querySelector('#job-title').value.toLowerCase();
+    // var jobPositions = document.querySelectorAll('.job-positions');
+    var country = document.querySelector('#country').value.toLowerCase();
+    var jobPostings = document.querySelectorAll('.job-posting');
+
+    jobPostings.forEach(function (jobPosting) {
+        var title = jobPosting.querySelector('.job-title').innerText.toLowerCase();
+        var location = jobPosting.querySelector('.location').innerText.toLowerCase();
+        if (title.includes(jobTitle) && (country === 'all' || location.includes(country))) {
+            jobPosting.style.display = 'block';
+        } else {
+            jobPosting.style.display = 'none';
+        }
+    });
+});
 
 function showForm() {
     // Ocultar las posiciones de trabajo
@@ -13,19 +26,3 @@ function showForm() {
     // Mostrar el formulario
     document.getElementById('application-form').style.display = 'block';
 }
-
-document.querySelector('.search-form').addEventListener('submit', function (event) {
-    console.log('Formulario enviado');
-    event.preventDefault();
-
-    var jobTitle = document.querySelector('#job-title').value;
-
-    var jobPositions = document.querySelectorAll('.job-positions');
-    jobPositions.forEach(function (jobPosition) {
-        if (jobPosition.innerText.includes(jobTitle)) {
-            jobPosition.style.display = 'block';
-        } else {
-            jobPosition.style.display = 'none';
-        }
-    });
-});
